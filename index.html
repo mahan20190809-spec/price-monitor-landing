@@ -157,7 +157,7 @@ nav.scrolled{box-shadow:0 4px 20px rgba(0,0,0,0.08);}
 .faq-answer p{font-size:14px;color:var(--muted);line-height:1.7;}
 
 /* ===== Pricing ===== */
-.pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-bottom:32px;}
+.pricing-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-bottom:32px;}
 .pricing-card{background:var(--bg2);border-radius:var(--radius);padding:36px;border:1px solid var(--rule);position:relative;transition:transform .3s,box-shadow .3s;}
 .pricing-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);}
 .pricing-card.popular{border-color:var(--accent);border-width:2px;}
@@ -246,6 +246,9 @@ footer a:hover{color:#fff;}
   .testimonials-grid{grid-template-columns:1fr;max-width:450px;margin:0 auto;}
   .contact-grid{grid-template-columns:1fr;max-width:400px;margin:48px auto 0;}
 }
+@media(max-width:1100px){
+  .pricing-grid{grid-template-columns:repeat(2,1fr);max-width:600px;margin:0 auto 32px;}
+}
 @media(max-width:900px){
   .feature-grid{grid-template-columns:1fr;}
   .pricing-grid{grid-template-columns:1fr;max-width:420px;margin:0 auto 32px;}
@@ -292,7 +295,7 @@ footer a:hover{color:#fff;}
     </h1>
     <p>实时追踪淘宝、京东、拼多多竞品价格变动，智能告警 + 数据分析。从个人卖家到企业团队，找到最适合你的价格监控方案。</p>
     <div class="hero-buttons">
-      <a href="#purchase" class="hero-btn hero-btn-primary">&#128293; 立即购买 Pro 版 ¥99</a>
+      <a href="#purchase" class="hero-btn hero-btn-primary">&#128293; 立即购买 Pro 版 ¥199/年</a>
       <a href="#how-it-works" class="hero-btn hero-btn-secondary">了解工作原理 &darr;</a>
     </div>
     <div class="hero-trust">
@@ -459,7 +462,7 @@ footer a:hover{color:#fff;}
           <tr>
             <td>价格</td>
             <td><strong>¥0</strong> <span style="font-size:12px;color:var(--muted);">永久免费</span></td>
-            <td class="popular-col"><strong style="font-size:18px;">¥99</strong> <span style="font-size:13px;color:var(--muted);">/年</span></td>
+            <td class="popular-col"><strong style="font-size:18px;">¥199</strong> <span style="font-size:13px;color:var(--muted);">/年</span></td>
             <td><strong>¥2,000+</strong> <span style="font-size:12px;color:var(--muted);">定制报价</span></td>
           </tr>
           <tr>
@@ -607,7 +610,7 @@ footer a:hover{color:#fff;}
         <div class="popular-badge">&#128293; 最受欢迎</div>
         <div class="pricing-name">Pro 版</div>
         <div class="pricing-price">
-          <span class="pricing-amount">&#165;99</span>
+          <span class="pricing-amount">&#165;199</span>
           <span class="pricing-interval"> / 年</span>
         </div>
         <div class="pricing-desc">无限监控 + 全功能解锁</div>
@@ -621,6 +624,24 @@ footer a:hover{color:#fff;}
           <li>优先技术支持</li>
         </ul>
         <a href="#purchase" class="pricing-btn pricing-btn-primary">立即订阅 &#8594;</a>
+      </div>
+      <div class="pricing-card animate-in">
+        <div class="pricing-name">&#128274; 终身版</div>
+        <div class="pricing-price">
+          <span class="pricing-amount">&#165;299</span>
+          <span class="pricing-interval"> 一次付费</span>
+        </div>
+        <div class="pricing-desc">一次购买永久使用，省心省力</div>
+        <ul class="pricing-features">
+          <li>无限商品追踪</li>
+          <li>淘宝 + 京东 + 拼多多</li>
+          <li>不限价格历史</li>
+          <li>微信 + 邮件 + 桌面通知</li>
+          <li>CSV / Excel 数据导出</li>
+          <li>AI 趋势分析 + 自动周报</li>
+          <li>永久免费升级</li>
+        </ul>
+        <a href="#purchase" class="pricing-btn pricing-btn-primary" style="background:linear-gradient(135deg,#f59e0b,#f97316);">立即购买 &#8594;</a>
       </div>
       <div class="pricing-card animate-in-right">
         <div class="pricing-name">企业版</div>
@@ -656,7 +677,7 @@ footer a:hover{color:#fff;}
         <div class="purchase-step-num">1</div>
         <span class="purchase-step-icon">&#128221;</span>
         <h3>选择版本</h3>
-        <p>根据需求选择 Pro 版（¥99/年）或企业版（¥2,000+）。查看上方<a href="#pricing" style="color:var(--accent);">定价方案</a>对比。</p>
+        <p>根据需求选择 Pro 版（¥199/年）、终身版（¥299）或企业版（¥2,000+）。查看上方<a href="#pricing" style="color:var(--accent);">定价方案</a>对比。</p>
       </div>
       <div class="purchase-step animate-in">
         <div class="purchase-step-num">2</div>
@@ -710,10 +731,10 @@ footer a:hover{color:#fff;}
       </div>
       <div class="faq-item animate-in">
         <button class="faq-question" onclick="toggleFaq(this)">
-          <span>Pro 版 ¥99/年 到期后怎么续费？</span>
+          <span>Pro 版 ¥199/年 到期后怎么续费？</span>
           <span class="faq-icon">+</span>
         </button>
-        <div class="faq-answer"><p>Pro 版到期前我们会通过微信和邮件提醒您续费。续费价格同样是 ¥99/年，不会涨价。到期后数据会保留 30 天，恢复续费后全部数据依然可用。推荐提前续费以免影响监控。</p></div>
+        <div class="faq-answer"><p>Pro 版到期前我们会通过微信和邮件提醒您续费。续费价格同样是 ¥199/年，不会涨价。到期后数据会保留 30 天，恢复续费后全部数据依然可用。推荐提前续费以免影响监控。另外还有终身版 ¥299 一次性付费，一次买断永久使用，更划算。</p></div>
       </div>
       <div class="faq-item animate-in">
         <button class="faq-question" onclick="toggleFaq(this)">
