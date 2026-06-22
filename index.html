@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>电商竞品智能监控 — 高客单价 · 高技术壁垒 · 好渠道</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+* { margin:0; padding:0; box-sizing:border-box; }
+:root {
+  --bg: #f8fafc;
+  --bg2: #ffffff;
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>电商竞品智能监控</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+:root{--accent:#6366f1;--max-w:1200px;}
+body{font-family:'Inter','Microsoft YaHei',sans-serif;background:#f8fafc;color:#0f172a;line-height:1.6;}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,.9);backdrop-filter:blur(12px);border-bottom:1px solid #e2e8f0;}
+.nav-inner{max-width:var(--max-w);margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:64px;}
+.nav-logo{font-weight:800;font-size:20px;color:var(--accent);}
+.nav-links{display:flex;gap:32px;align-items:center;}
+.nav-links a{text-decoration:none;color:#64748b;font-size:14px;font-weight:500;}
+.nav-cta{background:linear-gradient(135deg,#6366f1,#8b5cf6);color:#fff!important;padding:10px 24px;border-radius:8px;font-weight:600;}
+.hero{padding:120px 24px 80px;background:linear-gradient(135deg,#0f172a,#1e1b4b);color:#fff;text-align:center;}
+.hero h1{font-size:clamp(36px,5vw,64px);font-weight:900;background:linear-gradient(135deg,#fff,#a5b4fc);-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
+.hero p{font-size:18px;color:rgba(255,255,255,.7);max-width:600px;margin:20px auto 36px;}
+.hero-btn{display:inline-block;padding:16px 40px;border-radius:12px;font-size:16px;font-weight:600;text-decoration:none;background:linear-gradient(135deg,#6366f1,#8b5cf6);color:#fff;margin-top:40px;}
+.hero-stats{display:flex;justify-content:center;gap:48px;margin-top:60px;padding-top:40px;border-top:1px solid rgba(255,255,255,.1);}
+.hero-stat-value{font-size:32px;font-weight:800;}
+.hero-stat-label{font-size:14px;color:rgba(255,255,255,.5);}
+.section{padding:80px 24px;}
+.section-inner{max-width:var(--max-w);margin:0 auto;}
+.section-title{font-size:clamp(28px,3.5vw,40px);font-weight:800;margin-bottom:16px;}
+.section-desc{font-size:16px;color:#64748b;max-width:600px;margin-bottom:48px;}
+.product-showcase{display:grid;grid-template-columns:1fr 1fr;gap:32px;}
+.product-card{background:#fff;border-radius:16px;padding:40px;box-shadow:0 4px 24px rgba(0,0,0,.08);border:1px solid #e2e8f0;position:relative;}
+.product-card.featured{border-color:#6366f1;}
+.product-badge{position:absolute;top:-12px;right:24px;background:linear-gradient(135deg,#6366f1,#8b5cf6);color:#fff;padding:4px 16px;border-radius:20px;font-size:12px;font-weight:600;}
+.product-name{font-size:22px;font-weight:700;margin-bottom:8px;}
+.product-sub{font-size:14px;color:#64748b;margin-bottom:20px;}
+.product-tag{display:inline-block;background:#f8fafc;padding:4px 12px;border-radius:6px;font-size:12px;border:1px solid #e2e8f0;margin-right:8px;}
+.product-features{list-style:none;margin-bottom:24px;}
+.product-features li{padding:8px 0;font-size:14px;border-bottom:1px solid #e2e8f0;}
+.price-block{background:#f8fafc;border-radius:12px;padding:20px;margin-bottom:24px;}
+.price-current{font-size:28px;font-weight:800;}
+.price-cta{display:block;padding:14px;text-align:center;background:linear-gradient(135deg,#6366f1,#8b5cf6);color:#fff;border-radius:10px;font-weight:600;text-decoration:none;}
+.pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+.pricing-card{background:#fff;border-radius:16px;padding:36px;border:1px solid #e2e8f0;}
+.pricing-card.popular{border-color:#6366f1;box-shadow:0 0 0 2px #6366f1;position:relative;}
+.popular-badge{position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,#6366f1,#8b5cf6);color:#fff;padding:4px 20px;border-radius:20px;font-size:12px;font-weight:600;}
+.pricing-name{font-size:18px;font-weight:700;margin-bottom:16px;}
+.pricing-amount{font-size:44px;font-weight:900;}
+.pricing-interval{font-size:14px;color:#64748b;}
+.pricing-desc{font-size:14px;color:#64748b;margin-bottom:24px;}
+.pricing-features{list-style:none;margin-bottom:32px;}
+.pricing-features li{padding:8px 0;font-size:14px;}
+.pricing-btn{display:block;width:100%;padding:14px;border-radius:10px;font-size:15px;font-weight:600;cursor:pointer;text-decoration:none;text-align:center;}
+.pricing-btn-primary{background:linear-gradient(135deg,#6366f1,#8b5cf6);color:#fff;}
+.pricing-btn-secondary{background:#f8fafc;color:#0f172a;border:2px solid #e2e8f0;}
+.channel-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+.channel-card{background:#fff;border-radius:16px;padding:32px;border:1px solid #e2e8f0;}
+.channel-name{font-size:18px;font-weight:700;margin-bottom:8px;}
+.channel-desc{font-size:14px;color:#64748b;margin-bottom:16px;}
+.channel-price{font-size:24px;font-weight:800;color:#6366f1;margin-bottom:12px;}
+.cta-section{background:linear-gradient(135deg,#0f172a,#1e1b4b);color:#fff;text-align:center;padding:80px 24px;}
+.cta-section h2{font-size:clamp(28px,3vw,40px);font-weight:800;margin-bottom:16px;}
+.cta-section p{font-size:18px;color:rgba(255,255,255,.7);max-width:500px;margin:0 auto 36px;}
+footer{background:#0f172a;color:rgba(255,255,255,.5);padding:32px;text-align:center;font-size:14px;}
+@media(max-width:900px){
+.product-showcase,.pricing-grid,.channel-grid{grid-template-columns:1fr;}
+.hero-stats{flex-direction:column;gap:16px;}
+.nav-links a:not(.nav-cta){display:none;}
+}
+</style>
+</head>
+<body>
+<nav>
+<div class="nav-inner">
+<div class="nav-logo">⚡ PriceTrack</div>
+<div class="nav-links">
+<a href="#products">产品</a>
+<a href="#pricing">定价</a>
+<a href="#channels">变现路线</a>
+<a href="#contact" class="nav-cta">立即咨询</a>
+</div>
+</div>
+</nav>
+<section class="hero">
+<div class="hero-content">
+<h1>电商竞品价格<br>智能监控系统</h1>
+<p>一套系统，两条变现路线。从企业级自动化工具到全球 Chrome 插件市场，构建可持续的被动收入。</p>
+<div class="hero-stats">
+<div><div class="hero-stat-value">3</div><div class="hero-stat-label">覆盖平台</div></div>
+<div><div class="hero-stat-value">¥2,000-50,000</div><div class="hero-stat-label">客单价区间</div></div>
+<div><div class="hero-stat-value">3 种</div><div class="hero-stat-label">变现模式</div></div>
+</div>
+<a href="#pricing" class="hero-btn">查看定价方案</a>
+</div>
+</section>
+<section class="section" id="products">
+<div class="section-inner">
+<h2 class="section-title">双轨并行 · 两条变现路线</h2>
+<p class="section-desc">短期靠自动化工具赚现金流，中期靠 Chrome 插件躺赚订阅收入。</p>
+<div class="product-showcase">
+<div class="product-card featured">
+<div class="product-badge">🔥 路线一</div>
+<div class="product-name">企业级竞品价格监控系统</div>
+<div class="product-sub">Python + Selenium + 自动化报告</div>
+<div><span class="product-tag">企业级</span><span class="product-tag">自动化</span><span class="product-tag">可定制</span></div>
+<ul class="product-features">
+<li>多平台比价（淘宝/京东/拼多多）</li>
+<li>智能价格趋势分析和告警</li>
+<li>自动生成精美 HTML 报告</li>
+<li>CSV 数据导出</li>
+<li>可定制产品库和告警阈值</li>
+<li>支持打包为独立 exe 文件</li>
+</ul>
+<div class="price-block"><span class="price-current">¥2,000</span> 起 / 项目</div>
+<a href="#contact" class="price-cta">立即咨询定制 →</a>
+</div>
+<div class="product-card">
+<div class="product-name">电商价格追踪器 (Chrome 插件)</div>
+<div class="product-sub">Manifest V3 · 全球发布</div>
+<div><span class="product-tag">Chrome Web Store</span><span class="product-tag">被动收入</span><span class="product-tag">订阅制</span></div>
+<ul class="product-features">
+<li>一键追踪淘宝/京东/拼多多商品价格</li>
+<li>自动检测价格变动推送通知</li>
+<li>目标价格提醒</li>
+<li>价格历史记录可视化</li>
+<li>数据导出 CSV</li>
+<li>Free + Premium 订阅模式</li>
+</ul>
+<div class="price-block"><span class="price-current">¥9.9</span> / 月 · 高级版</div>
+<a href="#pricing" class="price-cta" style="background:#f8fafc;color:#0f172a;border:2px solid #e2e8f0;">查看完整定价 →</a>
+</div>
+</div>
+</div>
+</section>
+<section class="section" id="pricing" style="background:#fff">
+<div class="section-inner">
+<h2 class="section-title">灵活定价 · 多种选择</h2>
+<p class="section-desc">从个人使用到企业定制，找到适合你的方案。</p>
+<div class="pricing-grid">
+<div class="pricing-card">
+<div class="pricing-name">插件 · 免费版</div>
+<div class="pricing-price"><span class="pricing-amount">¥0</span></div>
+<div class="pricing-desc">适合个人用户体验基础功能</div>
+<ul class="pricing-features"><li>追踪 5 个商品</li><li>基础价格通知</li><li>价格历史查看</li></ul>
+<a href="#" class="pricing-btn pricing-btn-secondary" onclick="alert('请前往 Chrome Web Store 免费安装')">免费安装</a>
+</div>
+<div class="pricing-card popular">
+<div class="popular-badge">推荐</div>
+<div class="pricing-name">插件 · 高级版</div>
+<div class="pricing-price"><span class="pricing-amount">¥9.9</span><span class="pricing-interval"> / 月</span></div>
+<div class="pricing-desc">无限追踪，智能提醒，数据导出</div>
+<ul class="pricing-features"><li>无限商品追踪</li><li>目标价格提醒</li><li>价格历史查看</li><li>CSV 数据导出</li></ul>
+<a href="#" class="pricing-btn pricing-btn-primary" onclick="alert('请联系微信: PriceTrack 开通')">立即订阅</a>
+</div>
+<div class="pricing-card">
+<div class="pricing-name">企业自动化工具包</div>
+<div class="pricing-price"><span class="pricing-amount">¥2,000</span><span class="pricing-interval"> 起</span></div>
+<div class="pricing-desc">完整 Python 源码 + 定制开发</div>
+<ul class="pricing-features"><li>完整 Python 监控系统源码</li><li>京东 Selenium 爬虫</li><li>HTML 报告模板</li><li>打包 exe 可执行文件</li><li>3 次免费更新定制</li><li>7x24 技术支持 1 个月</li></ul>
+<a href="#contact" class="pricing-btn pricing-btn-secondary">咨询报价</a>
+</div>
+</div>
+</div>
+</section>
+<section class="section" id="channels">
+<div class="section-inner">
+<h2 class="section-title">三条变现实战路线</h2>
+<p class="section-desc">高技术壁垒 + 高客单价 + 好渠道，三条已验证的变现路径。</p>
+<div class="channel-grid">
+<div class="channel-card">
+<div class="channel-name">路线一 · 企业自动化接单</div>
+<div class="channel-price">¥2,000 - ¥20,000</div>
+<div class="channel-desc">帮企业开发自动化脚本/工具，快速赚现金流。</div>
+</div>
+<div class="channel-card" style="border-color:#6366f1">
+<div class="channel-name">路线二 · Chrome 插件订阅</div>
+<div class="channel-price">¥9.9 - ¥99 / 月</div>
+<div class="channel-desc">一次开发，持续收入。全球流量，美元结算。</div>
+</div>
+<div class="channel-card">
+<div class="channel-name">路线三 · AI 应用集成</div>
+<div class="channel-price">¥5,000 - ¥50,000</div>
+<div class="channel-desc">最高技术含量路线，客单价最高。</div>
+</div>
+</div>
+</div>
+</section>
+<section class="cta-section" id="contact">
+<h2>现在就出发 · 开始变现</h2>
+<p>不管是想购买产品、定制开发还是合作变现，都欢迎联系。</p>
+<div style="margin-top:40px">
+<span style="display:inline-block;padding:16px;border-radius:12px;background:rgba(255,255,255,.05);margin:0 12px;"><div style="font-size:12px;color:rgba(255,255,255,.4);">微信</div><div style="font-size:14px;margin-top:4px;">PriceTrack</div></span>
+<span style="display:inline-block;padding:16px;border-radius:12px;background:rgba(255,255,255,.05);margin:0 12px;"><div style="font-size:12px;color:rgba(255,255,255,.4);">邮箱</div><div style="font-size:14px;margin-top:4px;">pricetrack@example.com</div></span>
+</div>
+</section>
+<footer>
+<p>© 2026 PriceTrack · 电商竞品价格监控系统</p>
+</footer>
+</body>
+</html>  --muted: #64748b;
+  --rule: #e2e8f0;
+  --accent: #6366f1;
+  --accent2: #8b5cf6;
+  --success: #10b981;
+  --radius: 16px;
+  --shadow: 0 4px 24px rgba(0,0,0,0.08);
+  --shadow-lg: 0 8px 40px rgba(0,0,0,0.12);
+  --max-w: 1200px;
+}
+html { scroll-behavior:smooth; }
+body { font-family:'Inter',-apple-system,'Microsoft YaHei',sans-serif; background:var(--bg); color:var(--ink); line-height:1.6; }
+</style></head></html>
